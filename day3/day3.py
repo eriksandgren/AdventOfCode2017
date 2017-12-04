@@ -7,23 +7,15 @@ def parseInput():
 
 
 class Location():
-<<<<<<< HEAD
   def __init__(self, lap, side, posInSide, sideLength, index):
-=======
-  def __init__(self, lap, side, posInSide, sideLength):
->>>>>>> c104d29347d5b89ea86175425c7bb9a257457b14
+
     self.lap = lap
     self.side = side
     self.posInSide = posInSide
     self.sideLength = sideLength
-<<<<<<< HEAD
     self.index = index
   def display(self):
     print "Lap:", self.lap, "Side:", self.side, "posInSide:", self.posInSide, "sideLength:", self.sideLength, "index", self.index
-=======
-  def display(self):
-    print "Lap:", self.lap, "Side:", self.side, "posInSide:", self.posInSide, "sideLength:", self.sideLength
->>>>>>> c104d29347d5b89ea86175425c7bb9a257457b14
 
 def part1():
     myLoc = int(parseInput())
@@ -65,11 +57,10 @@ def part2():
 
   index = 0
   locations = []
-  for lap in xrange(1, 10):
+  for lap in xrange(1, 13):
     sideLength = 2 * lap - 1 
     numLocations = 2 * sideLength + 2 * (sideLength - 2)
     for locInLap in xrange(numLocations):
-
        index += 1
        locationInSide = locInLap % (sideLength - 1)
        side = locInLap // (sideLength - 1)
@@ -189,13 +180,20 @@ def part2():
       
     sum = 0
     for ind in inds:
-      sum += sums[ind - 1]
+      sum += sums[ind]
     sums.append(sum)
     # print inds
     print
 
-  for i in xrange(51):
+  for i in xrange(100):
     print sums[i]
+
+  for i in xrange(100):
+    if sums[i] > 325489:
+      print
+      print sums[i]
+      print
+      break
 part1()
 part2()
 
@@ -208,14 +206,3 @@ part2()
 42  21  22  23  24  25  26
 43  44  45  46  47  48  49 50
 '''
-=======
-       locationInSide = locInLap % (sideLength - 1)
-       side = locInLap // (sideLength - 1)
-       locations.append(Location(lap, side, locationInSide, sideLength))
-
-  for loc in locations:
-    loc.display()
-  
-part1()
-part2()
->>>>>>> c104d29347d5b89ea86175425c7bb9a257457b14
