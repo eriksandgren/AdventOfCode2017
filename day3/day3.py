@@ -5,7 +5,6 @@ def parseInput():
     file = open("input.txt")
     return file.readline()[:-1]  # Skip the \n at the end..
 
-
 class Location():
   def __init__(self, lap, side, posInSide, sideLength, index):
 

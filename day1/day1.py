@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import sys
 
-
 def parseInput():
     file = open("input.txt")
     return file.readline()[:-1]  # Skip the \n at the end..

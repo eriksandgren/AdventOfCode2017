@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 import sys
 
-
-
 def part1():
     with open ("input.txt", "r") as myfile:
         myInput = myfile.read()
