@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-import operator
-  
+
 def parseInput():
     with open ("input.txt", "r") as myfile:
         myInput = myfile.read()

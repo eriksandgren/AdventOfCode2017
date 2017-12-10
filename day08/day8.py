@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import operator
 
 class Command():
   def __init__(self, string):

@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import operator
 
 s = """bqyqwn (68) -> wscqe, cwxspl, syogw, xnxudsh
 ddswb (34)
