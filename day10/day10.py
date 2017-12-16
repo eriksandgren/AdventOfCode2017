@@ -64,8 +64,7 @@ def part2():
     for x in part_l:
       hash_val ^= x
     hash_l.append(hash_val)
- #   print len(part_l), part_l
-  #print hash_l
+
   strHex = ""
   for x in hash_l:
     strHex += "%0.2x" % x
